@@ -1,0 +1,18 @@
+#info-wrapper {
+  height: calc(100vh - 64px);
+}
+
+.bio {
+  width: 90vw;
+  font-size: 5vh;
+  text-align: justify;
+    
+    #img-wrapper {
+      height: 70vh;
+      width: 52.9375vh;
+    }
+    img {
+      height: 70vh;
+      width: 52.9375vh;
+    }
+}

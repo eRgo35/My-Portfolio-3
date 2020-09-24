@@ -1,0 +1,25 @@
+#footer-wrapper {
+  height: 150px;
+  font-size: 1.2em;
+  cursor: default;
+  background: var(--background);
+  margin-top: 50px;
+}
+
+#footer-content {
+  width: 90vw;
+
+  a {
+    color: var(--color);
+    text-decoration: none;
+    text-align: right;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-item {
+  width: 220px;
+}

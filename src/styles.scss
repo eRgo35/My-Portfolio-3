@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --background: #0a0a0a;
+  --color: #ffffff;
+  --nav-background: #000000;
+  --hello-background: #000000;
+}
+
+html {
+  margin: 0;
+  color: var(--color);
+  font-family: 'Jost', sans-serif;
+  scroll-behavior: smooth;
+  background: var(--background);
+  transition: background .5s ease-in-out; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  pointer-events: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+::selection {
+  background: #929292;
+}

@@ -1,0 +1,41 @@
+.menu-wrapper {
+    font-size: 24px;
+    height: 64px;
+    opacity: 0;
+    animation: fadein 2s 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.menu-content {
+    width: 95%;
+    a {
+        color: var(--color);
+        text-decoration: none;
+        position: relative;
+        &::after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: var(--color);
+            transition: width 0.2s ease 0s, left 0.2s ease 0s;
+            width: 0;
+        }
+        &:hover::after { 
+            width: 100%; 
+            left: 0; 
+        }
+    }
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+
+.active {
+    text-shadow: 1px 0 0 var(--color);
+    transition: all .5s;
+}

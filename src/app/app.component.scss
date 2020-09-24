@@ -1,0 +1,12 @@
+#nav-pos {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--nav-background);
+  height: 64px;
+}
+
+#content {
+  position: relative;
+}

@@ -16,3 +16,23 @@
       width: 52.9375vh;
     }
 }
+
+#info-wrapper {
+  height: calc(100vh - 64px);
+  margin-top: 20px;
+}
+
+.bio-sm {
+  width: 95vw;
+  font-size: 3vh;
+  text-align: justify;
+    
+    #img-wrapper {
+      margin-top: 20px;
+      height: auto;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+}

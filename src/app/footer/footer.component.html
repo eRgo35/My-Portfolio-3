@@ -1,4 +1,4 @@
-<div id="footer-wrapper" fxLayoutAlign="center center">
+<div id="footer-wrapper" fxLayoutAlign="center center" fxHide.lt-md>
   <div id="footer-content" fxLayoutAlign="space-between center" data-aos="fade-down" data-aos-duration="1500"
     data-aos-anchor-placement="top-bottom">
     <div class="footer-item" fxLayout="column">
@@ -25,6 +25,14 @@
         <a href="https://www.youtube.com/channel/UCiEQ8ZDBKqxdOTt1DVnoyQQ">YouTube</a>
         <a href="https://github.com/eRgo35">GitHub</a>
       </div>
+    </div>
+  </div>
+</div>
+<div id="footer-wrapper-sm" fxHide.gt-sm>
+  <div fxLayoutAlign="center center">
+    <div class="footer-item" fxLayoutAlign="center center" fxLayout="column">
+      <span>Michał Czyż &copy;{{ year }}</span>
+      <span>All rights reserved.</span>
     </div>
   </div>
 </div>

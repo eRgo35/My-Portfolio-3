@@ -1,11 +1,32 @@
-<div class="menu-wrapper" fxLayoutAlign="center center">
-    <div class="menu-content" fxLayoutAlign="space-between center">
-        <div><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">hello</a></div>
-        <div fxLayoutAlign="space-between center" fxLayoutGap="40px">
-            <div><a routerLink="/info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">info</a></div>
-            <div><a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">projects</a></div>
-            <div><a routerLink="/hobbies" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">hobbies</a></div>
-            <!-- <div><a href="https://mczyz.ml/assets/resume.pdf">resume</a></div> -->
-        </div>
+<div class="menu-wrapper" fxLayoutAlign="center center" fxHide.lt-md>
+  <div class="menu-content" fxLayoutAlign="space-between center">
+    <div><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">hello</a></div>
+    <div fxLayoutAlign="space-between center" fxLayoutGap="40px">
+      <div><a routerLink="/info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">info</a></div>
+      <div><a routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">projects</a>
+      </div>
+      <div><a routerLink="/hobbies" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">hobbies</a>
+      </div>
+      <!-- <div><a href="https://mczyz.ml/assets/resume.pdf">resume</a></div> -->
     </div>
+  </div>
+</div>
+
+<div class="menu-wrapper-sm" fxLayoutAlign="center center" fxHide.gt-sm>
+  <div class="menu-content-sm" fxLayoutAlign="space-between center">
+    <div id="currentPage">{{ currentPage }}</div>
+    <div id="menu-sm" (click)="menuOpen()" fxLayoutAlign="space-evenly center" fxLayout="column">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </div>
+  <div id="menu-bg-sm" fxLayoutAlign="center center" (click)="menuCloseM()">
+    <div id="menu-links-sm" fxLayoutAlign="center center" fxLayout="column">
+        <div><a (click)="menuClose('hello')" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">hello</a></div>
+        <div><a (click)="menuClose('info')" routerLink="/info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">info</a></div>
+        <div><a (click)="menuClose('projects')" routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">projects</a></div>
+        <div><a (click)="menuClose('hobbies')" routerLink="/hobbies" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">hobbies</a></div>
+    </div>
+  </div>
 </div>

@@ -1,184 +1,214 @@
-#hello-wrapper {
-    height: calc(100vh - 64px);
-    font-size: 20vh;
+#wrapper {
+  height: calc(100vh - 64px);
+  font-size: 20vh;
+  line-height: 1;
+  position: relative;
+  .background-hello {
+    background: var(--hello-background);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-4deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+  #title {
+    margin: 0 8vh 8vh;
+    padding-top: 12vh;
+    cursor: default;
+  }
+  #email {
+    font-size: 3vw;
+    margin-left: 25px;
+  }
+  #icons {
+    z-index: 50;
+    width: 4vw;
+    height: 4vh;
+    padding: 5px;
+    fill: var(--color);
+    transition: 0.3s fill ease-in-out;
+  }
+  #live-hello {
+    overflow: hidden;
     line-height: 1;
+    height: 1em;
+  }
+  .live1 {
+    animation: slide 20s linear infinite;
+  }
+  #name {
+    margin-top: 10px;
+  }
+  a {
+    margin: 0;
+    text-decoration: none;
+    color: var(--color);
+    font-size: 5vh;
+
+    .fab {
+      font-size: 3.5vh;
+    }
+  }
+  #email-address {
+    color: var(--color);
+    text-decoration: none;
     position: relative;
-    .background-hello {
-        background: var(--hello-background);
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        transform: skewY(-4deg);
-        transform-origin: top left;
-        z-index: -1;
-    }
-    #title {
-        margin: 0 8vh 8vh;
-        padding-top: 12vh;
-        cursor: default;
-    }
-    #email {
-        font-size: 3vw;
-    }
-    #icons {
-        z-index: 50;
-        width: 4vw;
-        height: 4vh;
-        padding: 5px;
-        fill: var(--color);
-        transition: 0.3s fill ease-in-out;
-    }
-    #live-hello {
-        overflow: hidden;
-        line-height: 1;
-        height: 1em;
-    }
-    .live1 {
-        animation: slide 20s linear infinite;
-    }
-    #name {
-        margin-top: 10px;
-    }
-    a {
-        margin: 0;
-        text-decoration: none;
-        color: var(--color);
-        font-size: 5vh;
-    }
+  }
+  #email-me:hover {
     #email-address {
-        color: var(--color);
-        text-decoration: none;
-        position: relative;
+      text-decoration: underline;
     }
-    #email-me:hover {
-        #email-address {
-            text-decoration: underline;
-        }
+  }
+
+  .social-links i {
+    transition: 0.3s color ease-in-out;
+    &:hover {
+      transition: 0.3s color ease-in-out;
     }
-    a:hover {
-        .twitter {
-            fill: #1DA1F2 !important;
-        }
-        .instagram {
-            fill: #C13584 !important;
-        }
-        .youtube {
-            fill: #FF0000 !important;
-        }
-        .github {
-            fill: #F4CBB2 !important;
-        }
-        transition: 0.3s fill ease-in-out;
-    }
+  }
+  .fa-twitter:hover { 
+    color: #1da1f2;
+  }
+  .fa-linkedin:hover {
+    color: #0e76a8;
+  }
+  .fa-youtube:hover {
+    color: #ff0000;
+  }
+  .fa-github:hover {
+    color: #f4cbb2;
+  }
 }
 #social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
-    width: 400px;
-    a {
-        font-size: 8px;
-        border-radius: 50%;
-    }
-    opacity: 0;
-    animation: fadein 2s 1.2s;
-    animation-fill-mode: forwards;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  width: 400px;
+  a {
+    font-size: 8px;
+    border-radius: 50%;
+  }
+  opacity: 0;
+  animation: fadein 2s 1.2s;
+  animation-fill-mode: forwards;
+  margin-left: 25px;
 }
 @keyframes slide {
-    0% {margin-top:-4em;}
-    20% {margin-top:-4em;}
-    25% {margin-top:-3em;}
-    45% {margin-top:-3em;}
-    50% {margin-top:-2em;}
-    70% {margin-top:-2em;}
-    75% {margin-top:-1em;}
-    95% {margin-top:-1em;}
-    100% {margin-top:0em;}
+  0% {
+    margin-top: -4em;
+  }
+  20% {
+    margin-top: -4em;
+  }
+  25% {
+    margin-top: -3em;
+  }
+  45% {
+    margin-top: -3em;
+  }
+  50% {
+    margin-top: -2em;
+  }
+  70% {
+    margin-top: -2em;
+  }
+  75% {
+    margin-top: -1em;
+  }
+  95% {
+    margin-top: -1em;
+  }
+  100% {
+    margin-top: 0em;
+  }
 }
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-
 
 #hello-wrapper-sm {
-    height: calc(100vh - 64px);
-    font-size: 12vh;
+  height: calc(100vh - 64px);
+  font-size: 12vh;
+  line-height: 1;
+  position: relative;
+  .background-hello-sm {
+    background: var(--hello-background);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    transform: skewY(-8deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+  #title-sm {
+    margin: 0 4vh 8vh;
+    padding-top: 5vh;
+    cursor: default;
+  }
+  #email-sm {
+    font-size: 3vw;
+  }
+  #icons {
+    z-index: 50;
+    width: 7vw;
+    height: 7vh;
+    padding: 5px;
+    fill: var(--color);
+    transition: 0.3s fill ease-in-out;
+  }
+  #live-hello {
+    overflow: hidden;
     line-height: 1;
+    height: 1em;
+  }
+  #name-sm {
+    margin-top: 10px;
+  }
+  a {
+    margin: 0;
+    text-decoration: none;
+    color: var(--color);
+    font-size: 5vh;
+  }
+  #email-address {
+    color: var(--color);
+    text-decoration: none;
     position: relative;
-    .background-hello-sm {
-        background: var(--hello-background);
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 80%;
-        transform: skewY(-8deg);
-        transform-origin: top left;
-        z-index: -1;
-    }
-    #title-sm {
-        margin: 0 4vh 8vh;
-        padding-top: 5vh;
-        cursor: default;
-    }
-    #email-sm {
-        font-size: 3vw;
-    }
-    #icons {
-        z-index: 50;
-        width: 7vw;
-        height: 7vh;
-        padding: 5px;
-        fill: var(--color);
-        transition: 0.3s fill ease-in-out;
-    }
-    #live-hello {
-        overflow: hidden;
-        line-height: 1;
-        height: 1em;
-    }
-    #name-sm {
-        margin-top: 10px;
-    }
-    a {
-        margin: 0;
-        text-decoration: none;
-        color: var(--color);
-        font-size: 5vh;
-    }
+  }
+  #email-me:hover {
     #email-address {
-        color: var(--color);
-        text-decoration: none;
-        position: relative;
+      text-decoration: underline;
     }
-    #email-me:hover {
-        #email-address {
-            text-decoration: underline;
-        }
+  }
+  a:hover {
+    .twitter {
+      fill: #1da1f2 !important;
     }
-    a:hover {
-        .twitter {
-            fill: #1DA1F2 !important;
-        }
-        .instagram {
-            fill: #C13584 !important;
-        }
-        .youtube {
-            fill: #FF0000 !important;
-        }
-        .github {
-            fill: #F4CBB2 !important;
-        }
-        transition: 0.3s fill ease-in-out;
+    .instagram {
+      fill: #c13584 !important;
     }
+    .youtube {
+      fill: #ff0000 !important;
+    }
+    .github {
+      fill: #f4cbb2 !important;
+    }
+    transition: 0.3s fill ease-in-out;
+  }
 }
 #social-sm {
-    margin-top: 25vh;
-    a {
-        font-size: 20px;
-        border-radius: 50%;
-    }
+  margin-top: 25vh;
+  a {
+    font-size: 20px;
+    border-radius: 50%;
+  }
 }

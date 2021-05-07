@@ -1,105 +1,92 @@
-#wrapper {
+.wrapper {
   height: calc(100vh - 64px);
   font-size: 20vh;
   line-height: 1;
   position: relative;
-  .background-hello {
-    background: var(--hello-background);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transform: skewY(-4deg);
-    transform-origin: top left;
-    z-index: -1;
-  }
-  #title {
-    margin: 0 8vh 8vh;
-    padding-top: 12vh;
-    cursor: default;
-  }
-  #email {
-    font-size: 3vw;
-    margin-left: 25px;
-  }
-  #icons {
-    z-index: 50;
-    width: 4vw;
-    height: 4vh;
-    padding: 5px;
-    fill: var(--color);
-    transition: 0.3s fill ease-in-out;
-  }
-  #live-hello {
-    overflow: hidden;
-    line-height: 1;
-    height: 1em;
-  }
-  .live1 {
-    animation: slide 20s linear infinite;
-  }
-  #name {
-    margin-top: 10px;
-  }
-  a {
-    margin: 0;
-    text-decoration: none;
-    color: var(--color);
-    font-size: 5vh;
+  cursor: default;
+}
+.background {
+  background: var(--hello-background);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+  z-index: -1;
+}
+.inner-wrapper {
+  margin: 0 8vh 8vh;
+  padding-top: 12vh;
+}
+.email {
+  font-size: 3vw;
+  margin-left: 1.5vh;
+}
+.animated-hello {
+  overflow: hidden;
+  line-height: 1;
+  height: 1em;
+}
+.animated-live {
+  animation: slide 20s linear infinite;
+}
+a {
+  margin: 0;
+  text-decoration: none;
+  color: var(--color);
+  font-size: 5vh;
 
-    .fab {
-      font-size: 3.5vh;
-    }
-  }
-  #email-address {
-    color: var(--color);
-    text-decoration: none;
-    position: relative;
-  }
-  #email-me:hover {
-    #email-address {
-      text-decoration: underline;
-    }
-  }
-
-  .icon {
-    width: 50px;
-    height: 50px;
-    path {
-      transition: 0.3s fill ease-in-out;
-      fill: white;
-      &:hover {
-        transition: 0.3s fill ease-in-out;
-      }
-    }
-  }
-  .twitter:hover path { 
-    fill: #1da1f2 !important;
-  }
-  .linkedin:hover path {
-    fill: #0e76a8 !important;
-  }
-  .youtube:hover path {
-    fill: #ff0000 !important;
-  }
-  .github:hover path {
-    fill: #f4cbb2 !important;
+  .fab {
+    font-size: 3.5vh;
   }
 }
-#social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  width: 400px;
+.address {
+  color: var(--color);
+  text-decoration: none;
+  position: relative;
+}
+.inner-email:hover .address {
+    text-decoration: underline;
+}
+.container-email {
+  width: 4.5vh;
+  height: 4.5vh;
+}
+.icon {
+  width: 3.8vh;
+  height: 3.8vh;
+  path {
+    transition: 0.3s fill ease-in-out;
+    fill: var(--color);
+    &:hover {
+      transition: 0.3s fill ease-in-out;
+    }
+  }
+}
+.twitter:hover path { 
+  fill: #1da1f2 !important;
+}
+.linkedin:hover path {
+  fill: #0e76a8 !important;
+}
+.youtube:hover path {
+  fill: #ff0000 !important;
+}
+.github:hover path {
+  fill: #f4cbb2 !important;
+}
+.social {
+  margin-top: 10vh;
+  width: 30vh;
   a {
-    font-size: 8px;
+    font-size: 0.7vh;
     border-radius: 50%;
   }
   opacity: 0;
   animation: fadein 2s 1.2s;
   animation-fill-mode: forwards;
-  margin-left: 25px;
+  margin-left: 1.5vh;
 }
 @keyframes slide {
   0% {margin-top: -4em}

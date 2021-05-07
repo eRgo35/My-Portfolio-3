@@ -20,5 +20,4 @@ export class NotFoundComponent implements OnInit {
     document.documentElement.style.setProperty('--nav-background', ' #000000');
     document.documentElement.style.setProperty('--hello-background', '#000000');
   }
-
 }

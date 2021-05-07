@@ -6,7 +6,6 @@ import { InfoComponent } from './info/info.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectsComponent } from './projects/projects.component';
 
-
 const routes: Routes = [
   { path: '', component: HelloComponent, data: { animation: 'isFarLeft' } },
   { path: 'info', component: InfoComponent, data: { animation: 'isLeft' } },

@@ -10,7 +10,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavComponent } from './nav/nav.component';
-import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -22,7 +21,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ProjectsComponent,
     HobbiesComponent,
     NavComponent,
-    MainComponent,
     FooterComponent,
     NotFoundComponent
   ],

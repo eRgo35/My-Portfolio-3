@@ -14,7 +14,7 @@ export class NotFoundComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({ disable: 'mobile' });
     document.documentElement.style.setProperty('--background', '#000000');
     document.documentElement.style.setProperty('--color', '#ffffff');
     document.documentElement.style.setProperty('--nav-background', ' #000000');

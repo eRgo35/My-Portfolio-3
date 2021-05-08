@@ -1,4 +1,4 @@
-<div class="wrapper" fxLayoutAlign="center center">
+<div class="wrapper" fxLayoutAlign="center center" fxHide.lt-md>
   <div class="inner-wrapper" fxLayoutAlign="space-between center">
     <div><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">hello</a></div>
     <div fxLayoutAlign="space-between center" fxLayoutGap="3.8vh">
@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<!-- <div class="menu-wrapper-sm" fxLayoutAlign="center center" fxHide.gt-sm>
+<div class="menu-wrapper-sm" fxLayoutAlign="center center" fxHide.gt-sm>
   <div class="menu-content-sm" fxLayoutAlign="space-between center">
     <div id="currentPage">{{ currentPage }}</div>
     <div id="menu-sm" (click)="menuOpen()" fxLayoutAlign="space-evenly center" fxLayout="column">
@@ -30,4 +30,4 @@
         <div><a href="https://mczyz.icu/assets/resume.pdf">resume</a></div>
     </div>
   </div>
-</div> -->
+</div>

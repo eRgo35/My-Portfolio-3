@@ -37,7 +37,7 @@ export class ProjectsComponent implements OnInit {
   ]
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({ disable: 'mobile' });
     document.documentElement.style.setProperty('--background', '#f0f0f0');
     document.documentElement.style.setProperty('--color', '#000000');
     document.documentElement.style.setProperty('--nav-background', '#ffffff');

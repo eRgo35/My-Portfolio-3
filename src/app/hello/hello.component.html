@@ -1,12 +1,15 @@
 <div class="wrapper">
   <div class="inner-wrapper">
     <div id="hello" fxLayout="row" data-aos="fade-up" data-aos-duration="1500">
-      <div class="animated-hello" fxLayout="column">
+      <div class="animated-hello" fxLayout="column" fxHide.lt-md>
         <div class="animated-live">Hello</div>
         <div class="live">Salut</div>
         <div class="live">Cześć</div>
         <div class="live">Aloha</div>
         <div class="live">Hello</div>
+      </div>
+      <div class="mobile-hello" fxHide.gt-sm>
+        <div>Hello</div>
       </div>
       <div>,</div>
     </div>

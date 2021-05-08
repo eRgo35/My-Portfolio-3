@@ -1,4 +1,4 @@
-<div class="wrapper" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3vh">
+<div class="wrapper" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="3vh" fxHide.lt-md>
   <div class="first" fxLayoutAlign="center center" fxLayoutGap="3vh">
     <a class="project" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom"
       href="{{ items[0].href }}" target="_blank">
@@ -23,6 +23,29 @@
       <div class="description" fxLayoutAlign="center center">{{ items[3].description }}</div>
     </a>
   </div>
+</div>
+
+<div class="wrapper-sm" fxLayoutAlign="center center" fxLayout="column" fxLayoutGap="10px" fxHide.gt-sm>
+  <a class="project-sm first-sm" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom"
+      href="{{ items[0].href }}" target="_blank">
+      <img src="{{ items[0].imgPath }}">
+      <div class="description-sm" fxLayoutAlign="center center">{{ items[0].description }}</div>
+    </a>
+    <a class="project-sm" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom"
+    href="{{ items[1].href }}" target="_blank">
+    <img src="{{ items[1].imgPath }}">
+    <div class="description-sm" fxLayoutAlign="center center">{{ items[1].description }}</div>
+  </a>
+  <a class="project-sm" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom"
+      href="{{ items[2].href }}" target="_blank">
+      <img src="{{ items[2].imgPath }}">
+      <div class="description-sm" fxLayoutAlign="center center">{{ items[2].description }}</div>
+    </a>
+    <a class="project-sm" data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-bottom"
+    href="{{ items[3].href }}" target="_blank">
+    <img src="{{ items[3].imgPath }}">
+    <div class="description-sm" fxLayoutAlign="center center">{{ items[3].description }}</div>
+  </a>
 </div>
 
 <app-footer></app-footer>

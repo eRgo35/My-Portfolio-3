@@ -14,7 +14,7 @@ export class HelloComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    AOS.init();
+    AOS.init({ disable: 'mobile' });
     document.documentElement.style.setProperty('--background', '#0a0a0a');
     document.documentElement.style.setProperty('--color', '#ffffff');
     document.documentElement.style.setProperty('--nav-background', ' #000000');

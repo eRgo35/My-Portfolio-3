@@ -1,6 +1,6 @@
 .wrapper {
   height: 10vh;
-  font-size: 1.4vh;
+  font-size: max(16px, 1.6vh);
   cursor: default;
   background: var(--background);
   margin-top: 5vh;

@@ -1,5 +1,5 @@
 .wrapper {
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
 }
 .bio {
   width: 90vw;
@@ -14,4 +14,22 @@
     height: 70vh;
     width: 52.9375vh;
   }
+}
+
+@media only screen and (max-width: 959.99px) {
+  .bio {
+    width: 95vw;
+    font-size: 3vh;
+    text-align: justify;
+    margin-top: 4vh;
+    .img-wrapper {
+      height: auto;
+      width: 100%;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  
 }

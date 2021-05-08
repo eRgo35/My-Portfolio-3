@@ -1,6 +1,6 @@
 <div class="wrapper" fxLayoutAlign="center center">
   <div class="inner-wrapper" fxLayoutAlign="space-between center" data-aos="fade-down" data-aos-duration="2500"
-    data-aos-anchor=".footer-load" data-aos-offset="0">
+    data-aos-anchor=".footer-load" data-aos-offset="0" fxHide.lt-md>
     <div class="footer-item" fxLayout="column">
       <span id="author-name">Michał Czyż</span>
       <span>Portfolio v3.0</span>
@@ -26,5 +26,8 @@
         <a href="https://twitter.com/Mike_Czyz_">Twitter</a>
       </div>
     </div>
+  </div>
+  <div fxLayoutAlign="center center" fxLayout="column" fxHide.gt-sm>
+    <span>Michał Czyż &copy; {{year}}</span>
   </div>
 </div>

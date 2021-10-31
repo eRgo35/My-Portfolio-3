@@ -21,4 +21,22 @@ export class HelloComponent implements OnInit {
     document.documentElement.style.setProperty('--hello-background', '#000000');
   }
 
+  moai() {
+    var audio = new Audio('assets/wololo.mp3');
+    audio.play();
+
+    var name = document.querySelector(".name");
+    name.innerHTML = "<a href='https://🗿🗿🗿🗿🗿.tk' class='name-url'>I'm Mike</a>";
+    var link = document.querySelector(".name-url") as HTMLLinkElement;
+    link.style.textDecoration = "none";
+    link.style.cursor = "default";
+    link.style.color = "white";
+
+    document.documentElement.style.setProperty('--background', '#3B4252');
+    document.documentElement.style.setProperty('--color', '#ECEFF4');
+    document.documentElement.style.setProperty('--nav-background', ' #2E3440');
+    document.documentElement.style.setProperty('--hello-background', '#2E3440');
+
+    document.querySelector(".copyright").innerHTML = "🗿."
+  }
 }

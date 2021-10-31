@@ -24,6 +24,7 @@
     "aos": "^2.3.4",
     "firebase": "^8.2.9",
     "firebase-tools": "^9.5.0",
+    "ngx-konami": "^1.7.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.14.1",
     "zone.js": "~0.10.2"
